@@ -1,0 +1,356 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Assistant, sans-serif;
+  text-decoration: none;
+  list-style: none;
+  background-color: white;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4%;
+  box-shadow: 0 4px 12px 0 rgba(0,0,0,.05);
+  background: #fff;
+}
+
+/* 2 Parts Division */
+.header-Left {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-basis: 45%; /* Left side space */
+}
+
+.header-Right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 30px;
+  flex-basis: 55%; /* Right side space */
+  border: none;
+}
+
+/* Navigation Links */
+.header-Left nav ul {
+  display: flex;
+  gap: 30px;
+}
+
+.header-Left nav ul li a {
+  font-size: 14px;
+  font-weight: 700;
+  color: #282c3f;
+}
+sup{
+    color: red;
+    font-size: 12px;
+}
+/* Search Bar */
+.header-Right form {
+  display: flex;
+  background-color: #f5f5f6;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 350px;
+  padding: 8px 12px;
+}
+.header-Right form button {
+  background: transparent;
+  border: none; /* Button ka border (jo image mein dikh raha hai) hataya */
+  outline: none;
+  cursor: pointer;
+  color: #696e79;
+  display: flex;
+  align-items: center;
+}
+.header-Right form input {
+  background: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+/* Icons and Names (The main fix) */
+.profileIcons ul {
+  display: flex;
+  gap: 30px;
+}
+
+.profileIcons ul li {
+  display: flex;
+  flex-direction: column; /* Icon upar, text niche */
+  align-items: center;    /* Center align */
+  cursor: pointer;
+}
+
+.profileIcons ul li i {
+  font-size: 18px;
+  color: #282c3f;
+  margin-bottom: 4px; /* Icon aur text ke beech thoda gap */
+}
+
+.profileIcons ul li span {
+  font-size: 12px;
+  font-weight: 700;
+  color: #282c3f;
+}
+.myntraBanner {
+    width: 100%;
+    padding: 20px 0;
+}
+
+/* --- FULL WIDTH IMAGE (Pehli image ke liye) --- */
+.myntraBanner-full {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 10px; /* Niche thoda gap dene ke liye */
+}
+
+.myntraBanner-full img {
+    width: 100%;       /* Isse ye puri width lega */
+    height: auto;
+    display: block;
+}
+
+/* --- DOUBLE IMAGES (Niche ki do images ke liye) --- */
+.myntraBanner-double {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;     /* Inhe side-by-side layega */
+}
+
+.myntraBanner-double img {
+    width: 50%;        /* Dono ko aadhi-aadhi jagah milegi */
+    height: auto;
+    display: block;
+}
+.omg-deal {
+    width: 100%;
+    max-width: 1200px; /* Isse ye banner ke barabar ho jayega */
+    margin: 0 auto;    /* Center mein alignment ke liye */
+    display: flex;
+    justify-content: space-between; /* Images ke beech space barabar karne ke liye */
+}
+
+.omg-deal-item {
+    flex: 1;           /* '3' ki jagah '1' use karein, ye sabko equal distribute karega */
+}
+
+.omg-deal-item img {
+    width: 100%;
+    display: block;    /* Bottom gap hatane ke liye */
+}
+.shope-category {
+    width: 100%;
+    max-width: 1200px; /* Banner ke barabar rakhne ke liye */
+    margin: 0 auto;    /* Center alignment */
+    display: flex;
+    /* justify-content: center; */
+    flex-wrap: wrap;   /* Isse images niche wali line mein shift hongi */
+    /* justify-content: flex-start; Images ko left se align karega */
+    justify-content: center;
+}
+
+.shop-category-item {
+    /* Ek line mein 6 images ke liye (100 / 6 = 16.66%) */
+    flex: 0 0 16.66%; 
+    box-sizing: border-box; /* Padding ko width ke andar rakhne ke liye */
+   
+}
+
+.shop-category-item img {
+    width: 100%;       /* Har box ke andar image fit rahegi */
+    display: block;
+    height: auto;
+}
+/* General Styling */
+body {
+    font-family: Assistant, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f5f5f6;
+}
+
+.footer-container {
+    background-color: #ffffff;
+    padding: 50px 0 20px 0;
+    width: 100%;
+    border-top: 1px solid #eaeaec;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1100px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    margin-bottom: 30px;
+    min-width: 200px;
+}
+
+/* Headings */
+.footer-column h3 {
+    font-size: 12px;
+    font-weight: 700;
+    color: #282c3f;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+/* List Styling */
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 5px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #696b79;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.footer-column ul li a:hover {
+    color: #282c3f;
+}
+
+/* Spacing */
+.margin-top {
+    margin-top: 25px;
+}
+
+/* App and Social Links */
+.app-links img {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.social-links i {
+    font-size: 20px;
+    color: #696b79;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+/* Promises Section (Right Side) */
+.promises {
+    max-width: 300px;
+}
+
+.promise-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.promise-item p {
+    font-size: 14px;
+    color: #696b79;
+    margin-left: 10px;
+    line-height: 1.2;
+}
+
+.promise-item strong {
+    color: #282c3f;
+}
+.footer-bottom-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #696b79;
+    background-color: #fff;
+}
+
+.section-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #282c3f;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+/* Popular Searches Styling */
+.popular-searches {
+    margin-bottom: 30px;
+}
+
+.search-links {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #94969f;
+}
+
+.search-links a {
+    text-decoration: none;
+    color: #696b79;
+}
+
+.search-links a:hover {
+    color: #282c3f;
+}
+
+/* Row Styling for Contact/Copyright */
+.footer-info-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.blue-link {
+    color: #526cd0;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.footer-divider {
+    border: 0;
+    border-top: 1px solid #eaeaec;
+    margin: 20px 
+}
+
+/* Office Address Layout */
+.office-address-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.address-details p {
+    margin: 2px 0;
+}
+
+.registration-details {
+    text-align: right;
+    align-self: flex-end;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .footer-info-row, .office-address-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .registration-details {
+        text-align: left;
+    }
+}
